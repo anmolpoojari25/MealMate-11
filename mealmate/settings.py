@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-9(4n*dq28hg^k8i)^5c*+rw7#dwfwz)ff_he8_y@dml@ne3q-g
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -116,6 +116,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 RAZORPAY_KEY_ID = 'rzp_test_S9FL38FA5b7XGs'
 RAZORPAY_KEY_SECRET = 'fRXhqhj71tgjxeX7EzrSy0BS'
